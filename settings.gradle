@@ -1,1 +1,10 @@
-rootProject.name = "aar-android"
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        // 🔥 This is what tells Gradle to look in /libs
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
