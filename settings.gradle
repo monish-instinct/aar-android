@@ -2,9 +2,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        // 🔥 This is what tells Gradle to look in /libs
         flatDir {
-            dirs 'libs'
+            dirs 'libs'  // This matches your 'libs' folder where .aar is placed
         }
     }
 }
